@@ -8,6 +8,9 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { VentasModule } from './ventas/ventas.module';
 
+// Modulos de prime NG
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 // Cambiar el locale de la App.
 import localeEs from '@angular/common/locales/es-MX';
 import localeFr from '@angular/common/locales/fr';
@@ -23,6 +26,7 @@ registerLocaleData(localeEs);
     BrowserModule,
     AppRoutingModule,
     SharedModule,
+    BrowserAnimationsModule,
     VentasModule,
   ],
   providers: [
