@@ -13,4 +13,12 @@ export class NoComunesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  nombre: string = 'Luis Adrian';
+  genero: string = 'masculino';
+
+  invitacionMapa = {
+    'masculino': 'invitarlo',
+    'femenino': 'invitarla',
+  };
+
 }
