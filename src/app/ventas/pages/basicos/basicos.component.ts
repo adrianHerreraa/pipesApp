@@ -10,7 +10,9 @@ export class BasicosComponent {
 
   lowerName: string = "luis adrian";
   upperName: string = "PINEDA HERREREA";
-  fullName: string = "LuIs aDrIaN PiNedA HeRrEra"
+  fullName: string = "LuIs aDrIaN PiNedA HeRrEra";
+
+  fecha: Date = new Date();
 
 
 }
