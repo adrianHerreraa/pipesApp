@@ -13,6 +13,7 @@ export class NoComunesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // i18nSelect
   nombre: string = 'Luis Adrian';
   genero: string = 'masculino';
 
@@ -20,5 +21,15 @@ export class NoComunesComponent implements OnInit {
     'masculino': 'invitarlo',
     'femenino': 'invitarla',
   };
+
+  // i18nPlural
+  clientes: string[] = ['Nombre', 'Pablo', 'José', 'Santiago'];
+  clientesMap = {
+    '=0': 'no tenemos ningún cliente esperando',
+    '=1': 'tenemos un cliente esperando',
+    'other': 'tenemos # clientes esperando'
+  };
+
+
 
 }
