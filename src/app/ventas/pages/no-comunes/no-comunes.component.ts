@@ -50,6 +50,13 @@ export class NoComunesComponent implements OnInit {
     this.clientes.push('Nombre');
   }
 
+  // Key Value pipe.
+  persona = {
+    name: 'Adrian Herrera',
+    age: 25,
+    direction: 'Morelia, Mich.'
+  };
+
 
 
 }
