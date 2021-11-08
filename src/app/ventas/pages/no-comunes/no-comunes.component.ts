@@ -57,6 +57,26 @@ export class NoComunesComponent implements OnInit {
     direction: 'Morelia, Mich.'
   };
 
+  // Json pipe
+  heroes = [
+    {
+      name: 'Superman',
+      canFly: true,
+    },
+    {
+      name: 'Robin',
+      canFly: false,
+    },
+    {
+      name: 'Batman',
+      canFly: false,
+    },
+    {
+      name: 'Wonderwoman',
+      canFly: true,
+    }
+  ];
+
 
 
 }
