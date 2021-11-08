@@ -9,15 +9,47 @@
 
     <div class="col md:col-6 sm:col-9">
         <p-fieldset legend="i18nSelect pipe" [toggleable]="true">
-            Saludos {{ nombre }}, es un honor
-            {{genero | i18nSelect:invitacionMapa}}
-             a nuestro evento.
+            <p>
+                Saludos {{ nombre }}, es un honor
+                {{genero | i18nSelect:invitacionMapa}}
+                a nuestro evento.
+            </p>
+            <button pButton class="p-button-outlined" (click)="cambiarPersona()">
+                Cambiar persona
+            </button>
         </p-fieldset>
     </div>
 
     <div class="col md:col-6 sm:col-9">
         <p-fieldset legend="i18nPlural pipe" [toggleable]="true">
-            Actualmente {{ clientes.length | i18nPlural:clientesMap }}.
+            <p>
+                Actualmente {{ clientes.length | i18nPlural:clientesMap }}.
+            </p>
+            
+            <div class="grid">
+                
+                <div class="col-6">
+                    <button pButton class="p-button-outlined" label="Borrar cliente" (click)="borrarCliente()" icon="pi pi-user-minus"></button>
+                </div>
+                
+                <div class="col-6">
+                    <button pButton class="p-button-outlined" label="Agregar cliente" (click)="agregarCliente()" icon="pi pi-user-plus"></button>
+                </div>
+
+            </div>
+            
+        </p-fieldset>
+    </div>
+
+    <div class="col md:col-6 sm:col-9">
+        <p-fieldset legend="Slice Pipe" [toggleable]="true">
+           
+            <b>Original</b>
+           <pre>{{ clientes }}</pre>
+
+           <b>slice:0:2</b>
+           <pre>{{ clientes | slice:0 }}</pre>
+
         </p-fieldset>
     </div>
 

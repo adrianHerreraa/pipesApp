@@ -30,6 +30,26 @@ export class NoComunesComponent implements OnInit {
     'other': 'tenemos # clientes esperando'
   };
 
+  cambiarPersona(){
+    if(this.genero == 'femenino'){
+      this.genero = 'masculino';
+      this.nombre = 'Adrian Herrera';
+    }else if (this.genero == 'masculino'){
+      this.genero = 'femenino';
+      this.nombre = 'Lizeth Anahí';
+    }
+  }
+
+  borrarCliente(){
+    if(this.clientes.length > 0){
+      this.clientes.pop();
+    }
+  }
+
+  agregarCliente(){
+    this.clientes.push('Nombre');
+  }
+
 
 
 }
